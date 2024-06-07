@@ -1,6 +1,6 @@
 #Imports
 from random import randint
-from colorist import ColorRGB, BgColorRGB 
+from ColorText import Colored298DB
 
 
 #Variables
@@ -36,9 +36,6 @@ def SmallColorSub(CompareList : list, CompareIndex : int, ChangeList : list, Cha
         ChangeList[ChangeIndex] = CompareList[CompareIndex] - SmallColorChange
     else:
         ChangeList[ChangeIndex] = CompareList[CompareIndex] + SmallColorChange
-        
-        
-        
         
 
 def MainColorPicker298DB() -> None:
@@ -116,21 +113,13 @@ def ContrastColorPicker7728() -> None:
     CONTRAST_GAZTANJQGQ[1] = 255-COLOR_1_GE3TAMRQGM[1]
     CONTRAST_GAZTANJQGQ[2] = 255-COLOR_1_GE3TAMRQGM[2]
     
-
 def PrintColors3ADE0() -> None:
-    FIRST_COLOR = ColorRGB(COLOR_1_GE3TAMRQGM[0], COLOR_1_GE3TAMRQGM[1], COLOR_1_GE3TAMRQGM[2])
-    FIRST_COLOR_BG = BgColorRGB(COLOR_1_GE3TAMRQGM[0], COLOR_1_GE3TAMRQGM[1], COLOR_1_GE3TAMRQGM[2])
     
-    SECOND_COLOR = ColorRGB(CLOSE_COLOR_GAZTAMJXGE[0], CLOSE_COLOR_GAZTAMJXGE[1], CLOSE_COLOR_GAZTAMJXGE[2])
-    SECON_COLOR_BG = BgColorRGB(CLOSE_COLOR_GAZTAMJXGE[0], CLOSE_COLOR_GAZTAMJXGE[1], CLOSE_COLOR_GAZTAMJXGE[2])
-    
-    THIRD_COLOR = ColorRGB(CONTRAST_GAZTANJQGQ[0], CONTRAST_GAZTANJQGQ[1], CONTRAST_GAZTANJQGQ[2])
-    THIRD_COLOR_BG = BgColorRGB(CONTRAST_GAZTANJQGQ[0], CONTRAST_GAZTANJQGQ[1], CONTRAST_GAZTANJQGQ[2])
-    
+    print(f"Main Color: {COLOR_1_GE3TAMRQGM} {Colored298DB(COLOR_1_GE3TAMRQGM, COLOR_1_GE3TAMRQGM,"\t  ")}")
+    print(f"Close Color: {CLOSE_COLOR_GAZTAMJXGE}  {Colored298DB(CLOSE_COLOR_GAZTAMJXGE, CLOSE_COLOR_GAZTAMJXGE, "\t  ")}")
+    print(f"CONTRAST: {CONTRAST_GAZTANJQGQ}  {Colored298DB(CONTRAST_GAZTANJQGQ, CONTRAST_GAZTANJQGQ, "\t  ")}")
 
-    print(f"Main Color: {COLOR_1_GE3TAMRQGM} {FIRST_COLOR} {FIRST_COLOR_BG}  {FIRST_COLOR.OFF} {FIRST_COLOR_BG.OFF}")  
-    print(f"Close Color: {CLOSE_COLOR_GAZTAMJXGE}  {SECOND_COLOR} {SECON_COLOR_BG}  {SECOND_COLOR.OFF} {SECON_COLOR_BG.OFF}")
-    print(f"CONTRAST_GAZTANJQGQ: {CONTRAST_GAZTANJQGQ}  {THIRD_COLOR} {THIRD_COLOR_BG}  {THIRD_COLOR.OFF} {THIRD_COLOR_BG.OFF}")
+
       
 
 def Main() -> None:
